@@ -1,5 +1,6 @@
 # React-Express-Calculator
 A very simple boilerplate to get started to development.
+Mimic the behavior of Windows 10 Calculator.
 
 ### Features
 - React

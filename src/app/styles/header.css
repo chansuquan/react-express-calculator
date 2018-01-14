@@ -1,24 +1,16 @@
 .Header {
-  background-color: #9b59b6;
-  .nav-item {
-      &:hover {
-          background-color: #8e44ad;
-          a {
-              text-decoration: none;
-          }
-      }
-      a {
-          display: block;
-          padding: .5rem 1rem;
-          color: #ffffff;
-      }
-  }
-  &-logo {
-      height: 52px;
-      width: 52px;
-      display: inline-block;
-      background: url("../images/logo.png");
-      background-size: 52px 52px;
-      background-repeat: no-repeat;
-  }
+    background-color: #9b59b6;
+    .nav-item {
+        &:hover {
+            background-color: #8e44ad;
+            a {
+                text-decoration: none;
+            }
+        }
+        a {
+            display: block;
+            padding: .5rem 1rem;
+            color: #ffffff;
+        }
+    }
 }

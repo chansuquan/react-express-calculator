@@ -156,10 +156,6 @@ class Calculator extends Component {
       newValue = value;
     }
 
-    if (currentDisplayValue === '' && storedValue) {
-      newValue = value;
-    }
-
     this.setState({ inputField: newValue, isOperandClicked: false });
   }
 
@@ -181,12 +177,12 @@ class Calculator extends Component {
       }
 
       calculateResult(currentInputValue, storedValue, currentMatrix[1]);
-      this.setState({ displayField: '' });
+      this.setState({ displayField: '', isOperandClicked: true });
       return;
     }
 
     calculateResult(currentMatrix[0], currentInputValue, currentMatrix[1]);
-    this.setState({ displayField: '', storedValue: currentInputValue });
+    this.setState({ displayField: '', storedValue: currentInputValue, isOperandClicked: true });
   }
 
   handleOperandChange(value) {
